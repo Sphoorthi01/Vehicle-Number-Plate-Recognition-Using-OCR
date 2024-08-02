@@ -10,65 +10,65 @@ Vehicle Number Plate Recognition (VNPR) systems are crucial for various applicat
 
 The project involves the following tasks:
 
--Image Acquisition: Capture or use an existing image of a vehicle with a visible license plate.
+**-** Image Acquisition: Capture or use an existing image of a vehicle with a visible license plate.
 
--Preprocessing: Convert the image to grayscale, apply edge detection using the Laplacian Pyramid method to highlight the license plate area.
+**-** Preprocessing: Convert the image to grayscale, apply edge detection using the Laplacian Pyramid method to highlight the license plate area.
 
--License Plate Detection: Identify the license plate area by detecting contours and approximating them to rectangular shapes.
+**-** License Plate Detection: Identify the license plate area by detecting contours and approximating them to rectangular shapes.
 
--Character Segmentation: Segment the detected license plate area into individual characters.
+**-** Character Segmentation: Segment the detected license plate area into individual characters.
 
--Character Recognition: Recognize each character using OCR.
+**-** Character Recognition: Recognize each character using OCR.
 
--Result Display: Display the detected license plate area and recognized characters.
+**-** Result Display: Display the detected license plate area and recognized characters.
 
 **Methodology:**
 
 *Image Preprocessing*
 
--Convert the input image to grayscale to simplify further processing.
+**-** Convert the input image to grayscale to simplify further processing.
 
--Apply edge detection (e.g., Canny edge detection) to identify potential edges in the image.
+**-** Apply edge detection (e.g., Canny edge detection) to identify potential edges in the image.
 
--Apply the Laplacian Pyramid technique for edge detection to highlight the license plate area.
+**-** Apply the Laplacian Pyramid technique for edge detection to highlight the license plate area.
 
 *License Plate Detection*
 
--Use contour detection to find potential license plate regions.
+**-** Use contour detection to find potential license plate regions.
 
--Filter and sort contours based on area and shape to identify the most likely license plate.
+**-** Filter and sort contours based on area and shape to identify the most likely license plate.
 
--Create a mask and use bitwise operations to extract the license plate area.
+**-** Create a mask and use bitwise operations to extract the license plate area.
 
 *Character Segmentation*
 
--Apply binary thresholding to the license plate area to create a binary image.
+**-** Apply binary thresholding to the license plate area to create a binary image.
 
--Detect contours within the binary image to segment individual characters.
+**-** Detect contours within the binary image to segment individual characters.
 
--Filter out noise by ignoring small contours.
+**-** Filter out noise by ignoring small contours.
 
 *Character Recognition*
 
--Convert each segmented character to a suitable format for OCR.
+**-** Convert each segmented character to a suitable format for OCR.
 
--Use an OCR engine (e.g., Tesseract) to recognize each character.
+**-** Use an OCR engine (e.g., Tesseract) to recognize each character.
 
--Compile the recognized characters to form the full license plate number.
+**-** Compile the recognized characters to form the full license plate number.
 
 *Visualization*
 
--Display the intermediate results (e.g., detected license plate area, segmented characters).
+**-** Display the intermediate results (e.g., detected license plate area, segmented characters).
 
--Print the recognized license plate number.
+**-** Print the recognized license plate number.
 
 **Challenges:**
 
--Handling different lighting conditions, angles, and image resolutions.
+**-** Handling different lighting conditions, angles, and image resolutions.
 
--Accurately segmenting characters in the presence of noise and distortions.
+**-** Accurately segmenting characters in the presence of noise and distortions.
 
--Ensuring high recognition accuracy across different license plate formats and fonts.
+**-** Ensuring high recognition accuracy across different license plate formats and fonts.
 
 **Dataset Source:** https://www.kaggle.com/datasets/andrewmvd/car-plate-detection
 
