@@ -1,4 +1,4 @@
-# Vehicle Number Plate Recognition (VNPR) Using OCR
+# Vehicle Number Plate Recognition (VNPR) Using OCR And Pyramids
 
 **Objective:**
 
